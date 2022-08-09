@@ -2,7 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Notfound } from './pages/notfound';
-import './styles/index.css';
+import {Registerpage} from './pages/register';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";                                //icons
+import { Loginpage } from './pages/login';
+
+
+
+import './styles/register.css';
+import './styles/login.css';
+import { Homepage } from './pages/home';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -26,6 +36,10 @@ root.render(
             <Route path='/content/6' element={< Contentonepage5/>} />
             <Route path='/content/8' element={< Contentonepage7/>} />
             <Route path='/content/9' element={< Contentonepage8/>} /> */}
+            
+                <Route path='/home' element={< Homepage/>} />
+                <Route path='/login' element={< Loginpage/>} />
+                <Route path='/' element={<Registerpage/>} />
             <Route path='/*' element={<Notfound />} />
         </Routes>  
     </BrowserRouter>
