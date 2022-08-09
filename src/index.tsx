@@ -12,6 +12,8 @@ import { Loginpage } from './pages/login';
 
 import './styles/register.css';
 import './styles/login.css';
+import './styles/navbar.css';
+import './styles/home.css';
 import { Homepage } from './pages/home';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

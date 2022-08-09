@@ -1,0 +1,25 @@
+/* navbar */
+
+.p-menubar{
+    background-color :#F4F1EA;
+  
+  }
+  .p-menuitem-text{
+    font-family: cursive;
+
+  }
+  
+  
+  .nobtn{
+   border:none;
+   cursor: pointer;
+   padding-right: 40px;
+  }
+  
+  /* .p-menuitem-link:hover:active{
+  
+   border-style: solid;
+   border-color: green;
+   border-radius: 50px;
+  } */
+  
