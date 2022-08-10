@@ -88,7 +88,7 @@ export function Home(){
                                     <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" width={200} height={250} alt="" />
                                 </SplitterPanel>
                                 <SplitterPanel className="flex align-items-center justify-content-center" size={80}>
-                                    <img src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width={700} height={250} alt="" />
+                                    <img src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width={800} height={250} alt="" />
                                 </SplitterPanel>
                             </Splitter>
                         </SplitterPanel>
