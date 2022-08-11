@@ -17,6 +17,7 @@ export function Navbar(){
         {
             label: 'MyBooks',
             icon: 'pi pi-book',
+            url:'/mybook',
            
         },
         {

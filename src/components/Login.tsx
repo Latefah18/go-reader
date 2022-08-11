@@ -33,7 +33,7 @@ export function Login(){
                 <a className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
             </div>
 
-            <Button label="Sign In" icon="pi pi-user" className="w-full" />
+            <Button label="Sign In"  className="w-full" />
         </div>
     </div>
    

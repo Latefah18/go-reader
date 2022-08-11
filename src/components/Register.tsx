@@ -11,14 +11,11 @@ import { Divider } from 'primereact/divider';
 import { classNames } from 'primereact/utils';
 import { Link } from 'react-router-dom';
 
-
-
 export function Register(){
     const [showMessage, setShowMessage] = useState(false);
     const [formData, setFormData] = useState({} as any);
   
-
-
+    ///// State
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -61,7 +58,8 @@ export function Register(){
 
     const formikTouched: any = formik.touched;
     const formikErrors: any = formik.errors;
-  
+
+ 
     const isFormFieldValid = (name: string) => !!(formikTouched[name] && formikErrors[name]);
     const getFormErrorMessage = (name: string) => {
       return isFormFieldValid(name) && <small className="p-error">{formikErrors[name]}</small>;
