@@ -27,7 +27,7 @@ const App: React.FC = () => {
     return (
           
         <><div className="flex ">  <div><  img className="mt-7 pl-6" src="   https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632632557l/11870085.jpg" alt="" width={200} height={200}/>
-        </div> <div><h1 className="head3">✏️✏️✨✨Add your rivew ✨✨✏️✏️</h1> </div> </div><main>
+        </div> <div><h1 className="head3">✨Add your rivew ✨</h1> </div> </div><main>
             <AddArticle saveArticle={saveArticle} />
             {articles.map((article: IArticle) => (
                 <Article
