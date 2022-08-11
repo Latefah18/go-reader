@@ -1,7 +1,6 @@
 import * as React from "react";
 import { IArticle } from "../type.t";
-import { Rating } from 'primereact/rating';
-import { useState } from "react";
+
 
 type Props = {
   saveArticle: (article: IArticle | any) => void;
@@ -9,8 +8,7 @@ type Props = {
 
 export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
   const [article, setArticle] = React.useState<IArticle | {}>();
-  const [val1, setVal1] = useState();
-  const [val2, setVal2] = useState();
+
 
   const handleArticleData = (e: React.FormEvent<HTMLInputElement>) => {
     setArticle({

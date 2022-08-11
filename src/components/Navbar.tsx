@@ -31,6 +31,7 @@ export function Navbar(){
                 },
                 {
                     label: 'Ask the Author',
+                    url:'/rivew',
                 
 
                 },
