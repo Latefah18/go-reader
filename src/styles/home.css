@@ -15,6 +15,13 @@ font-size: 13px;
 font-family: cursive;
 font-weight: 900;
 }
+.topic2{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+   border-radius: 40px;
+    }
+    
 
 
 
@@ -66,7 +73,7 @@ padding-left: 50px;
 
 .head2{
 
-    font-size: 20px;
+    font-size: 25px;
     font-family: cursive;
     font-weight: 900;
     color: rgb(239, 200, 71);
@@ -87,6 +94,7 @@ padding-left: 50px;
     align-items: center;
     padding: .5rem;
     width: 100%;
+    
 }
 
 .orderlist-demo .product-item img {
@@ -149,6 +157,4 @@ margin-top: 10px;
 
 
 }
-
-
 

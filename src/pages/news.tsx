@@ -1,16 +1,16 @@
-import { Home } from "../components/Home";
+
 import { Layout } from "../components/Layout";
 
-export function Homepage() {
+import { News } from "../components/News";
+
+export function Newspage() {
     return(
     
        
         <Layout>
- <Home></Home>
+<News></News>
         </Layout>        
 
 
     )
 }
-
-

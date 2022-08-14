@@ -6,30 +6,20 @@ import  { useState, useEffect } from 'react';
 import { OrderList } from 'primereact/orderlist';
 import { ProductService } from '../service/ProductService';
 import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
 
-export let bookss:any = [];
-
-// export interface books {
-// 	id: string;
-// 	description: string;
-// 	imageUrl: string;
-// 	y
-// }
-
-// interface PostProps {
-// 	post: item;
-// }
 
 export function Home(){
 
-    
     const [filterValue, setFilterValue] = useState('');
     const filterInputRef :any= useRef();
     const [products, setProducts] = useState();
     const productService = new ProductService();
-  
+ 
+ 
 
     const filterTemplate = (options:any) => {
+
         let {filterOptions} = options;
     
         return (
@@ -53,43 +43,46 @@ export function Home(){
     }
 
 
-    // onClick={handleClick}
-
     useEffect(() => {
         productService.getProductsSmall().then(data => setProducts(data));
+      
+      
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
   
-    const itemTemplate = (item:any) => {
+
+     const itemTemplate = (item:any) => {
 
         return (
             <div className="product-item">
                 <div className="image-container">
-                    <img src={`images/product/${item.image}`} onError={(e) => e.currentTarget.src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622355533l/4667024._SY475_.jpg'} alt={item.name} />
+                <Link to={`/rivews/${item.id}`}>
+                  <img src={`images/product/${item.image}`} onError={(e) => e.currentTarget.src=''} alt={item.name} />
+                  </Link>
                 </div>
                 <div className="product-list-detail">
-                    <h5 className="mb-2">{item.name}</h5>
-                    {/* <i className="pi pi-tag product-category-icon"></i> */}
-                    <span className="product-category">{item.category}</span>
+                    <h5 className="mb-2">{item.name}</h5>   
                 </div>
                 <div className="product-list-action">
-                <Button className="topic" label="My book"  onClick={handleClick} />
-          
+                <Link to={`/rivews/${item.id}`}>    <Button className="topic" label="Rivew"  /></Link>
+                
+                
+               
                 </div>
-            </div>
-        );
 
-             function handleClick(){
-            bookss.push(item)
-            console.log(bookss)
+                
+            </div>
+           
+            
+        );
         
-        }
+   
       
     }
 
     return(
         
         <><div className="card pt-5 ">
-            <h5 className="head4"> Born to read go to read 🚶📚</h5>
+            <h5 className="head4"> BORN TO READ GO TO READ 📚</h5>
             <Splitter style={{ height: '300px' }}>
                 <SplitterPanel className="flex align-items-center justify-content-center  " size={20} minSize={10}>
 
@@ -97,21 +90,21 @@ export function Home(){
                 </SplitterPanel>
                 <SplitterPanel size={80}>
                     <Splitter layout="vertical">
-                        <SplitterPanel className="flex align-items-center justify-content-center bg-yellow-50 " size={15}>
-                            <p className="topic">A room without books is like a body without a soul.</p>
-                        </SplitterPanel>
                         <SplitterPanel size={85}>
                             <Splitter>
                                 <SplitterPanel className="flex align-items-center justify-content-center" size={15}>
-                                    <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" width={250} height={250} alt="" />
+                                    <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" width={250} height={300} alt="" />
                                 </SplitterPanel>
                                 <SplitterPanel className="flex align-items-center justify-content-center" size={60}>
-                                    <img src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width={700} height={250} alt="" />
+                                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1890&q=80" width={640} height={300} alt="" />
                                 </SplitterPanel>
                             </Splitter>
                         </SplitterPanel>
                     </Splitter>
                 </SplitterPanel>
+
+
+                
             </Splitter>
 
 

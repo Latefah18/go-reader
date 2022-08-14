@@ -2,6 +2,7 @@ import { Button } from "primereact/button";
 import { Checkbox } from "primereact/checkbox";
 import { InputText } from "primereact/inputtext";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Login(){
 
@@ -32,8 +33,8 @@ export function Login(){
                 </div>
                 <a className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
             </div>
-
-            <Button label="Sign In"  className="w-full" />
+<Link to={'/home'}>
+            <Button   label="Sign In"  className="w-full log-btn" /></Link>
         </div>
     </div>
    

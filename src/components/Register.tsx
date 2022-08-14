@@ -10,8 +10,17 @@ import { Dialog } from 'primereact/dialog';
 import { Divider } from 'primereact/divider';
 import { classNames } from 'primereact/utils';
 import { Link } from 'react-router-dom';
+import axios from '../axioss';
+const REGISTER_URL = "/users";
+
+// import axios from "axios";
+// const REGISTER_URL = "/users";
+
+
+
 
 export function Register(){
+
     const [showMessage, setShowMessage] = useState(false);
     const [formData, setFormData] = useState({} as any);
   
@@ -48,12 +57,24 @@ export function Register(){
 
             return errors;
         },
-        onSubmit: (data) => {
+
+        onSubmit: async (data) => {
+
+            // await fetch(`http://localhost:3002/users`, {
+            //     method: 'PUT',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify(data)
+            // });
+        
             setFormData(data);
             setShowMessage(true);
 
             formik.resetForm();
         }
+
+     
+
+        
     });
 
     const formikTouched: any = formik.touched;
@@ -140,8 +161,9 @@ export function Register(){
                         </div>
 
                         <Button type="submit" label="Submit" className="mt-1" />
-
                     
+
+    
                         <Link to={'/login'}><h5>  Already a member? Sign In.</h5></Link>
                     </form>
                 </div>

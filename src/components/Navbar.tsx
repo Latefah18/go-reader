@@ -2,6 +2,7 @@
 import React from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
+import { Link } from 'react-router-dom';
 
 
 export function Navbar(){
@@ -24,20 +25,16 @@ export function Navbar(){
             label: 'Community',
             icon: 'pi pi-fw pi-user',
             items: [
-                {
-                    label: 'quotes',
-                    
-
-                },
+           
                 {
                     label: 'Ask the Author',
-                    url:'/rivew',
                 
 
                 },
                 {
-                    label: 'people',
+                    label: 'News',
                     icon: 'pi pi-fw pi-users',
+                    url:'/news',
                    
                 }
             ]
@@ -49,13 +46,11 @@ export function Navbar(){
         }
     ];
 
-    const start = <img alt="logo" src="main-logo.png" onError={(e) => e.currentTarget.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}  height={40} width={100}></img>;
+    const start = <img alt="logo" src="/main-logo.png" onError={(e) => e.currentTarget.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}  height={40} width={100}></img>;
     const end = <button className="pi pi-fw pi-power-off  nobtn" style={{'fontSize': '1rem'}}></button>
    
 
     return (
-
-
 
         <div>
         <div className="card">
