@@ -96,7 +96,7 @@ export function Home(){
                                     <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJvb2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" width={250} height={300} alt="" />
                                 </SplitterPanel>
                                 <SplitterPanel className="flex align-items-center justify-content-center" size={60}>
-                                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1890&q=80" width={700} height={300} alt="" />
+                                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1890&q=80" width={648} height={300} alt="" />
                                 </SplitterPanel>
                             </Splitter>
                         </SplitterPanel>
