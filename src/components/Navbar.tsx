@@ -47,7 +47,7 @@ export function Navbar(){
     ];
 
     const start = <img alt="logo" src="/main-logo.png" onError={(e) => e.currentTarget.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}  height={40} width={100}></img>;
-    const end = <button className="pi pi-fw pi-power-off  nobtn" style={{'fontSize': '1rem'}}></button>
+    const end = <button className="pi pi-fw pi-power-off  nobtn" style={{'fontSize': '1rem'}}> <br/></button>
    
 
     return (

@@ -60,8 +60,8 @@ export function Register(){
 
         onSubmit: async (data) => {
 
-            // await fetch(`http://localhost:3002/users`, {
-            //     method: 'PUT',
+            //  fetch(`http://localhost:3002/users`, {
+            //     method: 'POST',
             //     headers: { 'Content-Type': 'application/json' },
             //     body: JSON.stringify(data)
             // });
@@ -87,8 +87,7 @@ export function Register(){
     };
 
  
-
-    const dialogFooter = <div className="flex justify-content-center"><Button label="OK" className="p-button-text" autoFocus onClick={() => setShowMessage(false)} /></div>;
+    const dialogFooter = <div className="flex justify-content-center"> <Link to={'/home'}><Button label="OK" className="p-button-text" autoFocus onClick={() => setShowMessage(false)} /></Link></div>;
     const passwordHeader = <h6>Pick a password</h6>;
     const passwordFooter = (
         <React.Fragment>

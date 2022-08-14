@@ -10,6 +10,18 @@ import { Rating } from 'primereact/rating';
 
 
 export function F (){
+
+    const data =[
+        {
+          userId: '02b',
+          comId: '017',
+          fullName: 'Lily',
+          userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
+          text: 'I love this book ❤️❤️ ',
+          avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
+          replies: []
+        }
+      ]
  
 
   return <>
@@ -40,7 +52,7 @@ export function F (){
       }) => console.log('check submit, ', data)}
       currentData={(data: any) => {
           console.log('curent data', data)
-      } } commentData={[]} /><div></div></>
+      } } commentData={data} /><div></div></>
     }
 
 
@@ -48,6 +60,18 @@ export function F (){
 
     
     export function F2 (){
+
+        const data =[
+            {
+              userId: '02b',
+              comId: '017',
+              fullName: 'momo',
+              userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
+              text: 'wooow recommended 👍',
+              avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
+              replies: []
+            }
+          ]
 
 
         return <> <div className="flex flex-row flex-wrap p-5 m-2" >
@@ -77,7 +101,7 @@ export function F (){
             }) => console.log('check submit, ', data)}
             currentData={(data: any) => {
                 console.log('curent data', data)
-            } } commentData={[]} /><div></div></>
+            } } commentData={data} /><div></div></>
           }
       
       
@@ -121,7 +145,7 @@ export function F (){
 
 
                 return <> <div className="flex flex-row flex-wrap p-5 m-2" >
-                <div className='mr-4'>< img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1622355533i/4667024.jpg" alt="" width={250} height={250}/> <br /> hhh</div>
+                <div className='mr-4'>< img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1622355533i/4667024.jpg" alt="" width={250} height={250}/></div>
                  <div className='pt-5'> <Rating value={2} readOnly stars={5} cancel={false} /><h5>Book Name : The Help</h5> <h5>Author : Kathryn Stockett</h5> <h5>First published : February 10, 2009</h5>
                   <h5>Discription : In 1960s Mississippi, Southern society girl Skeeter (Emma Stone) <br /> returns from college with dreams of being a writer</h5></div></div><CommentSection
                   

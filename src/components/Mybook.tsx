@@ -36,7 +36,9 @@ export function Mybook() {
     
         const itemTemplate = (item:any) => {
             return (
+                
                 <div className="product-item">
+               
                     <div className="image-container">
                         <img src={`images/product/${item.image}`} alt={item.name} />
                     </div>
@@ -58,8 +60,8 @@ export function Mybook() {
                 <div className="card">
                     <PickList className='title' source={source} target={target} itemTemplate={itemTemplate} sourceHeader=" Books List 📚 " targetHeader="books Iwant to read"
                         sourceStyle={{ height: '300px' }} targetStyle={{ height: '300px' }} onChange={onChange}
-                      
-                   
+                    
+       
                         />
                 </div>
                 
